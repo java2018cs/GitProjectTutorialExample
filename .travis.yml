@@ -21,7 +21,7 @@ script: true
 
  # Another command/method to run tests
 script:
-  - python TestCalculator.py
+  - python Hello.py
 
 deploy:
   provider: heroku
@@ -32,4 +32,4 @@ deploy:
     repo: java2018cs/GitProjectTutorialExample
   #Setting your heroku Procfile here!!!
   run:
-    "web: gunicorn app_run:app"
+    "web: python Hello.py"
