@@ -23,13 +23,13 @@ script: true
 script:
   - python TestCalculator.py
 
-deploy:
-  provider: heroku
-  api_key: 591c69e4-8a82-4060-9c73-80f133cf4b2f
-    secure: $HEROKU_API_KEY
-  app: githubtest00557106
-  on:
-    repo: java2018cs/GitProjectTutorialExample
-  #Setting your heroku Procfile here!!!
-  run:
-    "web: gunicorn app_run:app"
+# deploy:
+#   provider: heroku
+#   api_key: 591c69e4-8a82-4060-9c73-80f133cf4b2f
+#     secure: $HEROKU_API_KEY
+#   app: githubtest00557106
+#   on:
+#     repo: java2018cs/GitProjectTutorialExample
+#   #Setting your heroku Procfile here!!!
+#   run:
+#     "web: gunicorn app_run:app"
