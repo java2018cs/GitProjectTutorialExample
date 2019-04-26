@@ -11,16 +11,25 @@ python:
 # It is important to avoid things like coverage, pep8 that are not required to run the app
 install:
   - pip install -r requirements.txt
-  
 
-# command to run tests 
+
+# command to run tests
 # This is the script that enables travis to run the tests
 # There are many ways to do dependeing on how you want travis to run and get you coverage
 script: true
   - nosetests --with-coverage --coverage report
-  
+
  # Another command/method to run tests
-script: 
+script:
   - python TestCalculator.py
 
-
+deploy:
+  provider: heroku
+  api_key: 591c69e4-8a82-4060-9c73-80f133cf4b2f
+    secure: $HEROKU_API_KEY
+  app: test-my-travisci-project
+  on:
+    repo: jimting/GitProjectTutorialExample
+  #Setting your heroku Procfile here!!!
+  run:
+    "web: gunicorn app_run:app"
