@@ -21,11 +21,11 @@ script: true
 
  # Another command/method to run tests
 script:
-  - python hello.py
+  - python TestCalculator.py
 
 deploy:
   provider: heroku
-  api_key: 
+  api_key:
     secure: 591c69e4-8a82-4060-9c73-80f133cf4b2f
   app: githubtest00557106
   on:
