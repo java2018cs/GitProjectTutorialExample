@@ -10,15 +10,6 @@ python:
 # It is important to avoid things like coverage, pep8 that are not required to run the app
 install:
   - pip install -r requirements.txt
-  - pip install utils
-  - pip install db
-  # - pip install pythonnet
-  # - pip install wsgi
-  # - pip install http
-  # - pip install webapi
-  # - pip install httpserver
-  # - pip install debugerror
-  # - pip install web.py
 # command to run tests
 # This is the script that enables travis to run the tests
 # There are many ways to do dependeing on how you want travis to run and get you coverage
@@ -38,4 +29,4 @@ deploy:
     repo: java2018cs/GitProjectTutorialExample
   #Setting your heroku Procfile here!!!
   run:
-    # "web: python app_run:app"
+    "web: python app_run:app"
