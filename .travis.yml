@@ -4,7 +4,7 @@ language: python
 # Mention the python version in which travis will run the app
 python:
   - "3.6"
-
+  - "2.8"
 
 # command to install dependencies in the requirements file
 # You can also install the coverage here to avoid it being in the requirements file
@@ -21,7 +21,7 @@ script: true
 
  # Another command/method to run tests
 script:
-  - python app_run.py
+  - python TestCalculator.py
 
 deploy:
   provider: heroku
