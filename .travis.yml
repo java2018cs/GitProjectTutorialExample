@@ -32,4 +32,4 @@ deploy:
     repo: java2018cs/GitProjectTutorialExample
   #Setting your heroku Procfile here!!!
   run:
-    "web: python app_run.py"
+    "web: python app_run:app"
