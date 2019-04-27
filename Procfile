@@ -1,1 +1,1 @@
-web: work
+web: app_run
