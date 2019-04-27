@@ -15,9 +15,9 @@ install:
   # - pip install pythonnet
   # - pip install wsgi
   # - pip install http
-  - pip install webapi
-  - pip install httpserver
-  - pip install debugerror
+  # - pip install webapi
+  # - pip install httpserver
+  # - pip install debugerror
   - pip install web.py
 # command to run tests
 # This is the script that enables travis to run the tests
