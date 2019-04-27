@@ -11,6 +11,13 @@ python:
 install:
   - pip install -r requirements.txt
   - pip install utils
+  - pip install db
+  - pip install net
+  - pip install wsgi
+  - pip install http
+  - pip install webapi
+  - pip install httpserver
+  - pip install debugerror
   - pip install web.py
 # command to run tests
 # This is the script that enables travis to run the tests
