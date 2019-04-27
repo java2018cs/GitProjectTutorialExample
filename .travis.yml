@@ -18,7 +18,7 @@ install:
   # - pip install webapi
   # - pip install httpserver
   # - pip install debugerror
-  - pip install web.py
+  # - pip install web.py
 # command to run tests
 # This is the script that enables travis to run the tests
 # There are many ways to do dependeing on how you want travis to run and get you coverage
