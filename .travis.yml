@@ -31,6 +31,6 @@ deploy:
   on:
     repo: java2018cs/GitProjectTutorialExample
   #Setting your heroku Procfile here!!!
-  # run:
-  #   "web: gunicorn app_run:app"
+  run:
+    "web: gunicorn app_run:app"
   skip_cleanup: true
