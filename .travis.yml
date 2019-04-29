@@ -27,6 +27,6 @@ deploy:
   app: githubtest00557106
   on:
     repo: java2018cs/GitProjectTutorialExample
-  #Setting your heroku Procfile here!!!s
+  #Setting your heroku Procfile here!!!ss
    run:
      "web: python app_run:app"
